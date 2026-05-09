@@ -4,7 +4,7 @@
       <div class="footer__logo">
         <img
           class="footer__logo-img"
-          [src]="logoSrc"
+          [src]="isDarkTheme ? logoSrcDark : logoSrcLight"
           width="240"
           height="68"
           [attr.alt]="'donationsHub.footer.brand' | translate"
