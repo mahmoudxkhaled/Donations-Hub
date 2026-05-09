@@ -1,12 +1,18 @@
 <section class="donate" aria-labelledby="donate-heading">
   <div class="donate__inner">
-    <h2 id="donate-heading" class="donate__title">Items You Can Donate</h2>
+    <h2 id="donate-heading" class="donate__title">{{ 'masajidWork.donate.heading' | translate }}</h2>
     <div class="donate__grid">
       <a class="donate__cell" *ngFor="let c of categories" href="#">
         <div class="donate__thumb">
-          <img [src]="c.imageSrc" [alt]="c.alt" class="donate__img" loading="lazy" decoding="async" />
+          <img
+            [src]="c.imageSrc"
+            [attr.alt]="c.altKey | translate"
+            class="donate__img"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
-        <p class="donate__label">{{ c.label }}</p>
+        <p class="donate__label">{{ c.labelKey | translate }}</p>
       </a>
     </div>
   </div>

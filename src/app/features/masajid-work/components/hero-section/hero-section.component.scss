@@ -130,6 +130,10 @@
   font-size: 18px;
 }
 
+:host-context(.mw--rtl) .hero__arrow {
+  transform: scaleX(-1);
+}
+
 .hero__visual {
   position: relative;
   flex: 1;

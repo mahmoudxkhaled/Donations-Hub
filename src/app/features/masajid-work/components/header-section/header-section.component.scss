@@ -65,12 +65,35 @@
   gap: 16px;
 }
 
-.header__icon-btn {
+.header__lang {
+  display: inline-flex;
+  border-radius: 9999px;
+  border: 1px solid var(--mw-outline-variant, #cbc4d2);
+  overflow: hidden;
+}
+
+.header__lang-btn {
   border: none;
-  background: none;
-  padding: 4px;
+  background: var(--mw-surface-container-lowest, #fff);
+  padding: 6px 12px;
+  font-size: 0.8125rem;
+  font-weight: 600;
   cursor: pointer;
   color: var(--mw-on-surface-variant, #494551);
+}
+
+.header__lang-btn:hover {
+  background: var(--mw-surface-container-high, #ece6ee);
+}
+
+.header__lang-btn--active {
+  background: var(--mw-primary, #4f378a);
+  color: var(--mw-on-primary, #fff);
+}
+
+.header__lang-btn--active:hover {
+  background: var(--mw-primary-container, #6750a4);
+  color: var(--mw-on-primary, #fff);
 }
 
 .header__menu {

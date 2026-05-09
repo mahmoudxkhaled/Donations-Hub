@@ -1,12 +1,12 @@
 <section class="roles" aria-labelledby="roles-heading">
   <div class="roles__inner">
-    <h2 id="roles-heading" class="roles__title">Who can use Masajid Work?</h2>
+    <h2 id="roles-heading" class="roles__title">{{ 'masajidWork.roles.heading' | translate }}</h2>
     <div class="roles__grid">
       <article class="roles__card" *ngFor="let role of roles">
         <span class="material-symbols-outlined roles__icon" aria-hidden="true">{{ role.icon }}</span>
-        <h3 class="roles__card-title">{{ role.title }}</h3>
-        <p class="roles__text">{{ role.description }}</p>
-        <button type="button" class="roles__btn">{{ role.actionLabel }}</button>
+        <h3 class="roles__card-title">{{ role.titleKey | translate }}</h3>
+        <p class="roles__text">{{ role.descriptionKey | translate }}</p>
+        <button type="button" class="roles__btn">{{ role.actionLabelKey | translate }}</button>
       </article>
     </div>
   </div>

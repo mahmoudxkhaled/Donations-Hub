@@ -1,8 +1,8 @@
-<section class="stats" aria-label="Platform statistics">
+<section class="stats" [attr.aria-label]="'masajidWork.stats.sectionAria' | translate">
   <div class="stats__inner">
     <article class="stats__card" *ngFor="let s of stats">
       <p class="stats__value">{{ s.value }}</p>
-      <p class="stats__label">{{ s.label }}</p>
+      <p class="stats__label">{{ s.labelKey | translate }}</p>
     </article>
   </div>
 </section>

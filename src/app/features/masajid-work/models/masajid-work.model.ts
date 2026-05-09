@@ -1,46 +1,46 @@
 export interface TrustBarItem {
   icon: string;
-  label: string;
+  labelKey: string;
 }
 
 export interface StatItem {
   value: string;
-  label: string;
+  labelKey: string;
 }
 
 export interface FeatureCard {
   icon: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
 }
 
 export interface ProcessStep {
   number: number;
-  title: string;
-  subtitle: string;
+  titleKey: string;
+  subtitleKey: string;
   highlight?: boolean;
 }
 
 export interface UserRole {
   icon: string;
-  title: string;
-  description: string;
-  actionLabel: string;
+  titleKey: string;
+  descriptionKey: string;
+  actionLabelKey: string;
 }
 
 export interface DonationCategory {
   imageSrc: string;
-  label: string;
-  alt: string;
+  labelKey: string;
+  altKey: string;
 }
 
 export interface ValidationNode {
   icon: string;
-  label: string;
+  labelKey: string;
   variant: 'primary' | 'accent';
 }
 
 export interface SimpleLink {
-  label: string;
+  labelKey: string;
   href: string;
 }

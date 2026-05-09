@@ -9,60 +9,82 @@ import type {
   ValidationNode,
 } from '../models/masajid-work.model';
 
+export const MW_LANG_STORAGE_KEY = 'mw.lang';
+
 const img = (file: string) => `assets/images/masajid-work/${file}`;
 
 export const TRUST_BAR_ITEMS: TrustBarItem[] = [
-  { icon: 'no_accounts', label: 'No cash handled by platform' },
-  { icon: 'id_card', label: 'Verified facility representatives' },
-  { icon: 'photo_camera', label: 'Fulfillment proof required' },
-  { icon: 'groups', label: 'Community validation after completion' },
+  { icon: 'no_accounts', labelKey: 'masajidWork.trustBar.noCash' },
+  { icon: 'id_card', labelKey: 'masajidWork.trustBar.verifiedReps' },
+  { icon: 'photo_camera', labelKey: 'masajidWork.trustBar.proof' },
+  { icon: 'groups', labelKey: 'masajidWork.trustBar.community' },
 ];
 
 export const STATS: StatItem[] = [
-  { value: '120+', label: 'Registered Facilities' },
-  { value: '850+', label: 'Active Donors' },
-  { value: '300+', label: 'Donation Requests' },
-  { value: '190+', label: 'Fulfilled Donations' },
+  { value: '120+', labelKey: 'masajidWork.stats.facilities' },
+  { value: '850+', labelKey: 'masajidWork.stats.donors' },
+  { value: '300+', labelKey: 'masajidWork.stats.requests' },
+  { value: '190+', labelKey: 'masajidWork.stats.fulfilled' },
 ];
 
 export const FEATURE_CARDS: FeatureCard[] = [
   {
     icon: 'fact_check',
-    title: 'Verified Facilities',
-    description:
-      'Rigorous vetting process for all masjid representatives and facility locations.',
+    titleKey: 'masajidWork.features.verifiedTitle',
+    descriptionKey: 'masajidWork.features.verifiedDesc',
   },
   {
     icon: 'inventory_2',
-    title: 'Physical Donations Only',
-    description:
-      'Focusing strictly on tangible assets to ensure 100% of donor intent reaches the site.',
+    titleKey: 'masajidWork.features.physicalTitle',
+    descriptionKey: 'masajidWork.features.physicalDesc',
   },
   {
     icon: 'task_alt',
-    title: 'Fulfillment Proof',
-    description:
-      'Donors and vendors upload visual confirmation upon delivery and installation.',
+    titleKey: 'masajidWork.features.proofTitle',
+    descriptionKey: 'masajidWork.features.proofDesc',
   },
   {
     icon: 'visibility',
-    title: 'Later Validation',
-    description:
-      'The local community confirms the presence and utility of the donated item.',
+    titleKey: 'masajidWork.features.validationTitle',
+    descriptionKey: 'masajidWork.features.validationDesc',
   },
 ];
 
 export const PROCESS_STEPS: ProcessStep[] = [
-  { number: 1, title: 'Request submission', subtitle: 'Masjid lists needed item' },
-  { number: 2, title: 'Admin review', subtitle: 'Need verification check' },
-  { number: 3, title: 'Donor browse', subtitle: 'Explore local needs' },
-  { number: 4, title: 'Donor acceptance', subtitle: 'Commitment to fulfill' },
-  { number: 5, title: 'Fulfillment & Proof', subtitle: 'Item delivery & photo' },
-  { number: 6, title: 'Facility confirmation', subtitle: 'Representative receipt' },
+  {
+    number: 1,
+    titleKey: 'masajidWork.process.s1Title',
+    subtitleKey: 'masajidWork.process.s1Sub',
+  },
+  {
+    number: 2,
+    titleKey: 'masajidWork.process.s2Title',
+    subtitleKey: 'masajidWork.process.s2Sub',
+  },
+  {
+    number: 3,
+    titleKey: 'masajidWork.process.s3Title',
+    subtitleKey: 'masajidWork.process.s3Sub',
+  },
+  {
+    number: 4,
+    titleKey: 'masajidWork.process.s4Title',
+    subtitleKey: 'masajidWork.process.s4Sub',
+  },
+  {
+    number: 5,
+    titleKey: 'masajidWork.process.s5Title',
+    subtitleKey: 'masajidWork.process.s5Sub',
+  },
+  {
+    number: 6,
+    titleKey: 'masajidWork.process.s6Title',
+    subtitleKey: 'masajidWork.process.s6Sub',
+  },
   {
     number: 7,
-    title: 'Community validation',
-    subtitle: 'Final trust seal',
+    titleKey: 'masajidWork.process.s7Title',
+    subtitleKey: 'masajidWork.process.s7Sub',
     highlight: true,
   },
 ];
@@ -70,59 +92,57 @@ export const PROCESS_STEPS: ProcessStep[] = [
 export const USER_ROLES: UserRole[] = [
   {
     icon: 'mosque',
-    title: 'Facility Representative',
-    description:
-      'Register your masjid to post verified physical needs and infrastructure requirements.',
-    actionLabel: 'Register Facility',
+    titleKey: 'masajidWork.roles.facilityTitle',
+    descriptionKey: 'masajidWork.roles.facilityDesc',
+    actionLabelKey: 'masajidWork.roles.facilityBtn',
   },
   {
     icon: 'volunteer_activism',
-    title: 'Donor',
-    description: 'Find and fulfill specific physical needs directly for communities in your area.',
-    actionLabel: 'Register as Donor',
+    titleKey: 'masajidWork.roles.donorTitle',
+    descriptionKey: 'masajidWork.roles.donorDesc',
+    actionLabelKey: 'masajidWork.roles.donorBtn',
   },
   {
     icon: 'storefront',
-    title: 'Vendor',
-    description: 'Partner with donors to supply and install specialized equipment for masajid.',
-    actionLabel: 'Join as Vendor',
+    titleKey: 'masajidWork.roles.vendorTitle',
+    descriptionKey: 'masajidWork.roles.vendorDesc',
+    actionLabelKey: 'masajidWork.roles.vendorBtn',
   },
   {
     icon: 'handshake',
-    title: 'Charity Rep',
-    description:
-      'Monitor and coordinate large-scale physical donation campaigns across multiple facilities.',
-    actionLabel: 'Join Hub',
+    titleKey: 'masajidWork.roles.charityTitle',
+    descriptionKey: 'masajidWork.roles.charityDesc',
+    actionLabelKey: 'masajidWork.roles.charityBtn',
   },
 ];
 
 export const DONATION_CATEGORIES: DonationCategory[] = [
-  { imageSrc: img('donate-carpets.jpg'), label: 'Carpets', alt: 'Premium prayer carpets' },
-  { imageSrc: img('donate-fans-ac.jpg'), label: 'Fans & AC', alt: 'Ceiling fans and air conditioning' },
-  { imageSrc: img('donate-sound.jpg'), label: 'Sound Systems', alt: 'Mosque sound system equipment' },
-  { imageSrc: img('donate-furniture.jpg'), label: 'Furniture', alt: 'Wooden furniture for masjid' },
-  { imageSrc: img('donate-cleaning.jpg'), label: 'Cleaning Supplies', alt: 'Cleaning supplies for masjid' },
-  { imageSrc: img('donate-maintenance.jpg'), label: 'Maintenance', alt: 'Maintenance work and tools' },
-  { imageSrc: img('donate-painting.jpg'), label: 'Painting', alt: 'Interior painting renovation' },
-  { imageSrc: img('donate-lighting.jpg'), label: 'Lighting', alt: 'Modern lighting fixtures' },
+  { imageSrc: img('donate-carpets.jpg'), labelKey: 'masajidWork.donate.carpetsLabel', altKey: 'masajidWork.donate.carpetsAlt' },
+  { imageSrc: img('donate-fans-ac.jpg'), labelKey: 'masajidWork.donate.fansLabel', altKey: 'masajidWork.donate.fansAlt' },
+  { imageSrc: img('donate-sound.jpg'), labelKey: 'masajidWork.donate.soundLabel', altKey: 'masajidWork.donate.soundAlt' },
+  { imageSrc: img('donate-furniture.jpg'), labelKey: 'masajidWork.donate.furnitureLabel', altKey: 'masajidWork.donate.furnitureAlt' },
+  { imageSrc: img('donate-cleaning.jpg'), labelKey: 'masajidWork.donate.cleaningLabel', altKey: 'masajidWork.donate.cleaningAlt' },
+  { imageSrc: img('donate-maintenance.jpg'), labelKey: 'masajidWork.donate.maintenanceLabel', altKey: 'masajidWork.donate.maintenanceAlt' },
+  { imageSrc: img('donate-painting.jpg'), labelKey: 'masajidWork.donate.paintingLabel', altKey: 'masajidWork.donate.paintingAlt' },
+  { imageSrc: img('donate-lighting.jpg'), labelKey: 'masajidWork.donate.lightingLabel', altKey: 'masajidWork.donate.lightingAlt' },
 ];
 
 export const VALIDATION_NODES: ValidationNode[] = [
-  { icon: 'shield', label: 'Vetted Identity', variant: 'primary' },
-  { icon: 'add_photo_alternate', label: 'Visual Proof', variant: 'primary' },
-  { icon: 'verified_user', label: 'Local Validation', variant: 'accent' },
+  { icon: 'shield', labelKey: 'masajidWork.validation.identity', variant: 'primary' },
+  { icon: 'add_photo_alternate', labelKey: 'masajidWork.validation.visualProof', variant: 'primary' },
+  { icon: 'verified_user', labelKey: 'masajidWork.validation.localValidation', variant: 'accent' },
 ];
 
 export const FOOTER_QUICK_LINKS: SimpleLink[] = [
-  { label: 'About Us', href: '#' },
-  { label: 'How it Works', href: '#' },
-  { label: 'Trust & Validation', href: '#' },
-  { label: 'Facility Registration', href: '#' },
+  { labelKey: 'masajidWork.footer.aboutUs', href: '#' },
+  { labelKey: 'masajidWork.footer.howItWorks', href: '#' },
+  { labelKey: 'masajidWork.footer.trust', href: '#' },
+  { labelKey: 'masajidWork.footer.facilityReg', href: '#' },
 ];
 
 export const FOOTER_LEGAL_LINKS: SimpleLink[] = [
-  { label: 'Vendor Portal', href: '#' },
-  { label: 'Privacy Policy', href: '#' },
+  { labelKey: 'masajidWork.footer.vendorPortal', href: '#' },
+  { labelKey: 'masajidWork.footer.privacy', href: '#' },
 ];
 
 export const HERO_IMAGE = img('hero-mosque.jpg');

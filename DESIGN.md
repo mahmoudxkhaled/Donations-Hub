@@ -1,5 +1,5 @@
 ---
-name: Masajid Work
+name: Donations Hub
 colors:
   surface: '#fdf7ff'
   surface-dim: '#ded8e0'

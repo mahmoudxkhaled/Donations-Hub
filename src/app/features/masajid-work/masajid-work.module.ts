@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { MasajidWorkRoutingModule } from './masajid-work-routing.module';
 import { MasajidWorkLandingComponent } from './pages/masajid-work-landing/masajid-work-landing.component';
 import { HeaderSectionComponent } from './components/header-section/header-section.component';
@@ -29,6 +30,6 @@ import { FooterSectionComponent } from './components/footer-section/footer-secti
     CallToActionSectionComponent,
     FooterSectionComponent,
   ],
-  imports: [CommonModule, MasajidWorkRoutingModule],
+  imports: [CommonModule, TranslateModule.forChild(), MasajidWorkRoutingModule],
 })
 export class MasajidWorkModule {}

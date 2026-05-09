@@ -1,7 +1,7 @@
 <section class="validation" aria-labelledby="validation-heading">
   <div class="validation__inner">
     <h2 id="validation-heading" class="validation__title">
-      Designed to reduce fraud and increase confidence
+      {{ 'masajidWork.validation.heading' | translate }}
     </h2>
     <div class="validation__row">
       <div class="validation__track" aria-hidden="true"></div>
@@ -15,12 +15,9 @@
           [class.validation__icon--accent]="node.variant === 'accent'"
           aria-hidden="true"
         >{{ node.icon }}</span>
-        <p class="validation__label">{{ node.label }}</p>
+        <p class="validation__label">{{ node.labelKey | translate }}</p>
       </div>
     </div>
-    <p class="validation__copy">
-      Our verification loop ensures that every donation is not only delivered but also properly
-      utilized by the community it was intended for.
-    </p>
+    <p class="validation__copy">{{ 'masajidWork.validation.copy' | translate }}</p>
   </div>
 </section>
