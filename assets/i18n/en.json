@@ -1,5 +1,5 @@
 {
-  "masajidWork": {
+  "donationsHub": {
     "header": {
       "navAria": "Primary navigation",
       "brand": "Donations Hub",
@@ -8,12 +8,15 @@
       "about": "About",
       "trust": "Trust & Validation",
       "languageGroup": "Language",
+      "languageMenu": "Choose language",
       "langEn": "English",
       "langAr": "Arabic",
       "register": "Register",
       "donorRegistration": "Donor Registration",
       "facilityRegistration": "Facility Registration",
-      "vendorPortal": "Vendor Portal"
+      "vendorPortal": "Vendor Portal",
+      "themeToLight": "Switch to light theme",
+      "themeToDark": "Switch to dark theme"
     },
     "hero": {
       "titlePrefix": "Connecting Mosques with Donors for",

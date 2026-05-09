@@ -1,5 +1,5 @@
 {
-  "masajidWork": {
+  "donationsHub": {
     "header": {
       "navAria": "التنقل الرئيسي",
       "brand": "Donations Hub",
@@ -8,12 +8,15 @@
       "about": "من نحن",
       "trust": "الثقة والتحقق",
       "languageGroup": "اللغة",
+      "languageMenu": "اختر اللغة",
       "langEn": "English",
       "langAr": "العربية",
       "register": "تسجيل",
       "donorRegistration": "تسجيل متبرع",
       "facilityRegistration": "تسجيل منشأة",
-      "vendorPortal": "بوابة الموردين"
+      "vendorPortal": "بوابة الموردين",
+      "themeToLight": "التبديل إلى السمة الفاتحة",
+      "themeToDark": "التبديل إلى السمة الداكنة"
     },
     "hero": {
       "titlePrefix": "ربط المساجد بالمتبرعين من أجل",
