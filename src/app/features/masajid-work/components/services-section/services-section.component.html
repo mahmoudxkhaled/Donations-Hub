@@ -1,8 +1,8 @@
-<section class="donate" aria-labelledby="donate-heading">
+<section id="donate" class="donate" aria-labelledby="donate-heading">
   <div class="donate__inner">
     <h2 id="donate-heading" class="donate__title">{{ 'masajidWork.donate.heading' | translate }}</h2>
     <div class="donate__grid">
-      <a class="donate__cell" *ngFor="let c of categories" href="#">
+      <a class="donate__cell" *ngFor="let c of categories" href="#cta">
         <div class="donate__thumb">
           <img
             [src]="c.imageSrc"

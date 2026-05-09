@@ -11,6 +11,9 @@ import type {
 
 export const MW_LANG_STORAGE_KEY = 'mw.lang';
 
+/** Base path for this landing feature (must match `app-routing` lazy path). */
+export const MASAJID_WORK_ROUTE_PATH = '/masajid-work';
+
 const img = (file: string) => `assets/images/masajid-work/${file}`;
 
 export const TRUST_BAR_ITEMS: TrustBarItem[] = [
@@ -21,10 +24,10 @@ export const TRUST_BAR_ITEMS: TrustBarItem[] = [
 ];
 
 export const STATS: StatItem[] = [
-  { value: '120+', labelKey: 'masajidWork.stats.facilities' },
-  { value: '850+', labelKey: 'masajidWork.stats.donors' },
-  { value: '300+', labelKey: 'masajidWork.stats.requests' },
-  { value: '190+', labelKey: 'masajidWork.stats.fulfilled' },
+  { target: 120, suffix: '+', labelKey: 'masajidWork.stats.facilities' },
+  { target: 850, suffix: '+', labelKey: 'masajidWork.stats.donors' },
+  { target: 300, suffix: '+', labelKey: 'masajidWork.stats.requests' },
+  { target: 190, suffix: '+', labelKey: 'masajidWork.stats.fulfilled' },
 ];
 
 export const FEATURE_CARDS: FeatureCard[] = [
@@ -134,15 +137,15 @@ export const VALIDATION_NODES: ValidationNode[] = [
 ];
 
 export const FOOTER_QUICK_LINKS: SimpleLink[] = [
-  { labelKey: 'masajidWork.footer.aboutUs', href: '#' },
-  { labelKey: 'masajidWork.footer.howItWorks', href: '#' },
-  { labelKey: 'masajidWork.footer.trust', href: '#' },
-  { labelKey: 'masajidWork.footer.facilityReg', href: '#' },
+  { labelKey: 'masajidWork.footer.aboutUs', href: '#about' },
+  { labelKey: 'masajidWork.footer.howItWorks', href: '#how-it-works' },
+  { labelKey: 'masajidWork.footer.trust', href: '#trust-validation' },
+  { labelKey: 'masajidWork.footer.facilityReg', href: '#about' },
 ];
 
 export const FOOTER_LEGAL_LINKS: SimpleLink[] = [
-  { labelKey: 'masajidWork.footer.vendorPortal', href: '#' },
-  { labelKey: 'masajidWork.footer.privacy', href: '#' },
+  { labelKey: 'masajidWork.footer.vendorPortal', href: '#about' },
+  { labelKey: 'masajidWork.footer.privacy', href: '#footer' },
 ];
 
 export const HERO_IMAGE = img('hero-mosque.jpg');

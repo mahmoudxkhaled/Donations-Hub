@@ -1,4 +1,4 @@
-<section class="hero" aria-labelledby="hero-heading">
+<section id="hero" class="hero" aria-labelledby="hero-heading">
   <div class="hero__grid">
     <div class="hero__content">
       <h1 id="hero-heading" class="hero__title">
@@ -7,13 +7,9 @@
       </h1>
       <p class="hero__lead">{{ 'masajidWork.hero.lead' | translate }}</p>
       <div class="hero__actions">
-        <button type="button" class="btn btn--primary">
-          {{ 'masajidWork.hero.registerDonor' | translate }}
-        </button>
-        <button type="button" class="btn btn--outline">
-          {{ 'masajidWork.hero.registerFacility' | translate }}
-        </button>
-        <a class="hero__text-link" href="#">
+        <a class="btn btn--primary" href="#cta">{{ 'masajidWork.hero.registerDonor' | translate }}</a>
+        <a class="btn btn--outline" href="#about">{{ 'masajidWork.hero.registerFacility' | translate }}</a>
+        <a class="hero__text-link" href="#how-it-works">
           {{ 'masajidWork.hero.howItWorksLink' | translate }}
           <span class="material-symbols-outlined hero__arrow" aria-hidden="true">arrow_forward</span>
         </a>

@@ -4,7 +4,10 @@ export interface TrustBarItem {
 }
 
 export interface StatItem {
-  value: string;
+  /** Numeric target for count-up animation */
+  target: number;
+  /** Suffix after the number, e.g. "+" */
+  suffix: string;
   labelKey: string;
 }
 

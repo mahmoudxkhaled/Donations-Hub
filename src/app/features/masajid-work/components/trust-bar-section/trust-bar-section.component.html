@@ -1,8 +1,8 @@
-<div class="trust-bar">
+<section id="trust-bar" class="trust-bar">
   <div class="trust-bar__inner">
     <div class="trust-bar__item" *ngFor="let item of items">
       <span class="material-symbols-outlined trust-bar__icon" aria-hidden="true">{{ item.icon }}</span>
       <span class="trust-bar__label">{{ item.labelKey | translate }}</span>
     </div>
   </div>
-</div>
+</section>

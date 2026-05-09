@@ -1,3 +1,9 @@
+.mw main section[id],
+.mw main section#trust-bar,
+.mw footer#footer {
+  scroll-margin-top: 88px;
+}
+
 .mw {
   --mw-primary: #4f378a;
   --mw-on-primary: #ffffff;

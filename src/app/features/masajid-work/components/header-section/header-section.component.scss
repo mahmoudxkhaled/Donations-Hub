@@ -87,35 +87,36 @@
   color: var(--mw-primary, #4f378a);
 }
 
-.header__lang {
+.header__lang-menu {
+  position: relative;
+}
+
+.header__lang-trigger {
   display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  border: 2px solid var(--mw-primary, #4f378a);
   border-radius: 9999px;
-  border: 1px solid var(--mw-outline-variant, #cbc4d2);
-  overflow: hidden;
-}
-
-.header__lang-btn {
-  border: none;
-  background: var(--mw-surface-container-lowest, #fff);
-  padding: 6px 12px;
-  font-size: 0.8125rem;
-  font-weight: 600;
+  padding: 8px 14px;
+  font-weight: 700;
   cursor: pointer;
-  color: var(--mw-on-surface-variant, #494551);
+  background-color: var(--mw-surface-container-lowest, #fff);
+  color: var(--mw-primary, #4f378a);
+  transition:
+    background 0.2s,
+    transform 0.15s;
 }
 
-.header__lang-btn:hover {
-  background: var(--mw-surface-container-high, #ece6ee);
+.header__lang-trigger:hover {
+  background-color: rgb(103 80 164 / 0.08);
 }
 
-.header__lang-btn--active {
-  background: var(--mw-primary, #4f378a);
-  color: var(--mw-on-primary, #fff);
+.header__lang-trigger:active {
+  transform: scale(0.95);
 }
 
-.header__lang-btn--active:hover {
-  background: var(--mw-primary-container, #6750a4);
-  color: var(--mw-on-primary, #fff);
+.header__lang-chevron {
+  font-size: 1.25rem;
 }
 
 .header__menu {
@@ -161,22 +162,40 @@
   visibility: visible;
 }
 
-.header__dropdown a {
-  display: block;
-  padding: 8px 16px;
-  font-size: 0.875rem;
-  color: var(--mw-on-surface, #1d1b20);
-  text-decoration: none;
+.header__lang-menu--open .header__dropdown {
+  opacity: 1;
+  visibility: visible;
 }
 
-.header__dropdown a:hover {
+.header__dropdown a,
+.header__dropdown button.header__dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  text-align: start;
+  color: var(--mw-on-surface, #1d1b20);
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.header__dropdown a:hover,
+.header__dropdown button.header__dropdown-item:hover {
   background: var(--mw-surface-container-high, #ece6ee);
 }
 
-.header__dropdown a:first-child {
+.header__dropdown button.header__dropdown-item--active {
+  font-weight: 700;
+  color: var(--mw-primary, #4f378a);
+}
+
+.header__dropdown > :first-child {
   border-radius: 12px 12px 0 0;
 }
 
-.header__dropdown a:last-child {
+.header__dropdown > :last-child {
   border-radius: 0 0 12px 12px;
 }
