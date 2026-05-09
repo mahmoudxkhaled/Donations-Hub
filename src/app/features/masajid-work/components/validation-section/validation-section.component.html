@@ -1,0 +1,26 @@
+<section class="validation" aria-labelledby="validation-heading">
+  <div class="validation__inner">
+    <h2 id="validation-heading" class="validation__title">
+      Designed to reduce fraud and increase confidence
+    </h2>
+    <div class="validation__row">
+      <div class="validation__track" aria-hidden="true"></div>
+      <div
+        class="validation__node"
+        *ngFor="let node of nodes"
+        [class.validation__node--accent]="node.variant === 'accent'"
+      >
+        <span
+          class="material-symbols-outlined validation__icon"
+          [class.validation__icon--accent]="node.variant === 'accent'"
+          aria-hidden="true"
+        >{{ node.icon }}</span>
+        <p class="validation__label">{{ node.label }}</p>
+      </div>
+    </div>
+    <p class="validation__copy">
+      Our verification loop ensures that every donation is not only delivered but also properly
+      utilized by the community it was intended for.
+    </p>
+  </div>
+</section>

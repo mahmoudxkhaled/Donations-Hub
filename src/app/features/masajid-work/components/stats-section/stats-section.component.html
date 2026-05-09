@@ -1,0 +1,8 @@
+<section class="stats" aria-label="Platform statistics">
+  <div class="stats__inner">
+    <article class="stats__card" *ngFor="let s of stats">
+      <p class="stats__value">{{ s.value }}</p>
+      <p class="stats__label">{{ s.label }}</p>
+    </article>
+  </div>
+</section>

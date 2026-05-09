@@ -1,0 +1,15 @@
+<section class="features" aria-labelledby="features-heading">
+  <div class="features__inner">
+    <header class="features__head">
+      <h2 id="features-heading" class="features__title">Built for transparent physical donations</h2>
+      <div class="features__rule" aria-hidden="true"></div>
+    </header>
+    <div class="features__grid">
+      <article class="features__card" *ngFor="let card of cards">
+        <span class="material-symbols-outlined features__icon" aria-hidden="true">{{ card.icon }}</span>
+        <h3 class="features__card-title">{{ card.title }}</h3>
+        <p class="features__card-text">{{ card.description }}</p>
+      </article>
+    </div>
+  </div>
+</section>

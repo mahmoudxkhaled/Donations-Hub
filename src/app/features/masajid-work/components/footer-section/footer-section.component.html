@@ -1,0 +1,27 @@
+<footer class="footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <div class="footer__logo">Masajid Work</div>
+      <p class="footer__mission">
+        Building trust and efficiency in community-driven facility management through verified
+        physical donations.
+      </p>
+    </div>
+    <div>
+      <h3 class="footer__heading">Quick Links</h3>
+      <nav class="footer__nav" aria-label="Quick links">
+        <a *ngFor="let link of quickLinks" [href]="link.href">{{ link.label }}</a>
+      </nav>
+    </div>
+    <div>
+      <h3 class="footer__heading">Contact &amp; Legal</h3>
+      <nav class="footer__nav" aria-label="Legal and contact">
+        <a *ngFor="let link of legalLinks" [href]="link.href">{{ link.label }}</a>
+        <p class="footer__email">support&#64;masajidwork.org</p>
+      </nav>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <p class="footer__copy">© 2024 Masajid Work. Built on principles of Amanah and Khidmah.</p>
+  </div>
+</footer>

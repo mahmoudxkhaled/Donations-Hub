@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html class="light" dir="ltr" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Masajid Work | Verified Physical Donations</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Readex+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#503d00",
+                        "tertiary-container": "#c9a74d",
+                        "on-tertiary-fixed": "#241a00",
+                        "background": "#fdf7ff",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "tertiary": "#765b00",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "outline": "#7a7582",
+                        "on-tertiary-fixed-variant": "#594400",
+                        "primary-fixed": "#e9ddff",
+                        "on-secondary-container": "#645a7d",
+                        "surface-variant": "#e6e0e9",
+                        "surface": "#fdf7ff",
+                        "surface-container-highest": "#e6e0e9",
+                        "outline-variant": "#cbc4d2",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#ece6ee",
+                        "surface-bright": "#fdf7ff",
+                        "on-secondary-fixed": "#1f1635",
+                        "primary-fixed-dim": "#cfbcff",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#322f35",
+                        "surface-tint": "#6750a4",
+                        "inverse-primary": "#cfbcff",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "on-primary-container": "#e0d2ff",
+                        "secondary-fixed": "#e9ddff",
+                        "on-surface-variant": "#494551",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#ded8e0",
+                        "surface-container": "#f2ecf4",
+                        "on-primary-fixed": "#22005d",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#6750a4",
+                        "inverse-on-surface": "#f5eff7",
+                        "primary": "#4f378a",
+                        "on-surface": "#1d1b20",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#63597c",
+                        "secondary-container": "#e1d4fd",
+                        "surface-container-low": "#f8f2fa",
+                        "tertiary-fixed": "#ffdf93",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#1d1b20"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "sm": "8px",
+                        "lg": "24px",
+                        "unit": "4px",
+                        "xl": "48px",
+                        "md": "16px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["IBM Plex Sans"],
+                        "arabic-body": ["Readex Pro"],
+                        "body-readable": ["IBM Plex Sans"],
+                        "label-sm": ["IBM Plex Sans"],
+                        "display-lg": ["IBM Plex Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "arabic-body": ["18px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                        "body-readable": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "display-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #fdf7ff;
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: #1d1b20;
+        }
+        .emerald-accent { color: #065f46; }
+        .gold-accent { color: #d4af37; }
+        .bg-emerald-accent { background-color: #065f46; }
+        .bg-gold-accent { background-color: #d4af37; }
+    </style>
+</head>
+<body>
+<!-- Header: TopNavBar -->
+<nav class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center w-full max-w-container-max mx-auto px-gutter py-md">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+                Masajid Work
+            </div>
+<div class="hidden md:flex items-center space-x-lg">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary dark:border-primary-fixed-dim pb-1 hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-readable text-body-readable hover:text-primary transition-colors duration-200" href="#">How It Works</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-readable text-body-readable hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-body-readable text-body-readable hover:text-primary transition-colors duration-200" href="#">Trust &amp; Validation</a>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">language</span>
+<div class="relative group">
+<button class="bg-primary text-on-primary px-lg py-sm rounded-full font-bold active:scale-95 transform transition-all duration-150 flex items-center gap-xs">
+                        Register
+                        <span class="material-symbols-outlined">expand_more</span>
+</button>
+<!-- Dropdown Mockup -->
+<div class="absolute right-0 mt-xs w-48 bg-surface-container-lowest shadow-lg rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-outline-variant">
+<a class="block px-md py-sm hover:bg-surface-container-high first:rounded-t-xl" href="#">Donor Registration</a>
+<a class="block px-md py-sm hover:bg-surface-container-high" href="#">Facility Registration</a>
+<a class="block px-md py-sm hover:bg-surface-container-high last:rounded-b-xl" href="#">Vendor Portal</a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter py-xl md:py-[120px] flex flex-col md:flex-row items-center gap-xl">
+<div class="flex-1 text-center md:text-left">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-md">
+                Connecting Mosques with Donors for <span class="text-primary">Verified Physical Donations</span>
+</h1>
+<p class="font-body-readable text-body-readable text-on-surface-variant mb-xl max-w-2xl">
+                Masajid Work helps verified facilities publish real physical needs, while donors can review, accept, fulfill, and validate donations without any cash transaction through the platform.
+            </p>
+<div class="flex flex-col sm:flex-row gap-md justify-center md:justify-start items-center">
+<button class="bg-primary text-on-primary px-xl py-md rounded-xl font-bold shadow-md hover:shadow-lg transition-shadow active:scale-95">Register as Donor</button>
+<button class="border-2 border-primary text-primary px-xl py-md rounded-xl font-bold hover:bg-primary-container/10 transition-colors active:scale-95">Register Facility</button>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary flex items-center gap-xs" href="#">
+                    How It Works <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="flex-1 relative w-full">
+<div class="aspect-square bg-primary-container/20 rounded-full absolute -z-10 blur-3xl scale-125"></div>
+<img alt="Community Mosque Illustration" class="w-full h-auto rounded-3xl shadow-xl object-cover" data-alt="A serene and modern architectural rendering of a mosque interior during soft morning light, focusing on premium carpets and clean wooden furniture. Donors are seen arriving with physical items like air conditioning units and prayer mats. The visual style is high-key with soft emerald and gold accents, reflecting a clean community-focused modernist aesthetic with deep professional shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCthc8ySxnmGJlC1lO7t5svbA21XI9nFz9hzGpnKW1MrTnvruYAbNZ7NcySQAEJwcisr8IUS1Ym24lUUw9Uwa2_Eh6J66Jn-u9gfKlS7bJ_9eOdB_-rg7l_cnWCqtFK1ADUrKYODH2qi1Nx7HzM9JZkH_cac9OqelLV1gt3P8nhu5GK8qLPpT8YaG0n08pJl-LVU-quDzyG8Zl3Lg3hJoAhqVkHxIm5oS50oPTvMfO77dNB6dRzxPJJJ7mq9gqStSZ1kFBY6mdQszxK"/>
+<!-- Floating Indicators -->
+<div class="absolute top-4 right-4 bg-surface-container-lowest p-md rounded-xl shadow-lg flex items-center gap-md border border-primary/10">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<p class="text-label-sm font-bold">Verified Needs</p>
+<p class="text-[12px] text-on-surface-variant">Carpets, Lighting, Fans</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Message Bar -->
+<div class="bg-surface-container-low py-lg">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-md">
+<div class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">no_accounts</span>
+<span class="font-label-sm">No cash handled by platform</span>
+</div>
+<div class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">id_card</span>
+<span class="font-label-sm">Verified facility representatives</span>
+</div>
+<div class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">photo_camera</span>
+<span class="font-label-sm">Fulfillment proof required</span>
+</div>
+<div class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">groups</span>
+<span class="font-label-sm">Community validation after completion</span>
+</div>
+</div>
+</div>
+<!-- Statistics Section -->
+<section class="py-xl max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-lg">
+<div class="bg-surface-container-lowest p-xl rounded-xl border border-outline-variant text-center shadow-sm hover:shadow-md transition-shadow">
+<p class="text-display-lg font-bold text-primary">120+</p>
+<p class="text-on-surface-variant font-label-sm">Registered Facilities</p>
+</div>
+<div class="bg-surface-container-lowest p-xl rounded-xl border border-outline-variant text-center shadow-sm hover:shadow-md transition-shadow">
+<p class="text-display-lg font-bold text-primary">850+</p>
+<p class="text-on-surface-variant font-label-sm">Active Donors</p>
+</div>
+<div class="bg-surface-container-lowest p-xl rounded-xl border border-outline-variant text-center shadow-sm hover:shadow-md transition-shadow">
+<p class="text-display-lg font-bold text-primary">300+</p>
+<p class="text-on-surface-variant font-label-sm">Donation Requests</p>
+</div>
+<div class="bg-surface-container-lowest p-xl rounded-xl border border-outline-variant text-center shadow-sm hover:shadow-md transition-shadow">
+<p class="text-display-lg font-bold text-primary">190+</p>
+<p class="text-on-surface-variant font-label-sm">Fulfilled Donations</p>
+</div>
+</div>
+</section>
+<!-- Purpose Section -->
+<section class="py-xl bg-surface-container-high/30">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-xl">
+<h2 class="font-headline-md text-headline-md mb-sm">Built for transparent physical donations</h2>
+<div class="w-24 h-1 bg-tertiary-container mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg">
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant flex flex-col gap-sm">
+<span class="material-symbols-outlined text-primary text-[40px]">fact_check</span>
+<h3 class="font-bold text-on-surface">Verified Facilities</h3>
+<p class="text-on-surface-variant text-sm">Rigorous vetting process for all masjid representatives and facility locations.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant flex flex-col gap-sm">
+<span class="material-symbols-outlined text-primary text-[40px]">inventory_2</span>
+<h3 class="font-bold text-on-surface">Physical Donations Only</h3>
+<p class="text-on-surface-variant text-sm">Focusing strictly on tangible assets to ensure 100% of donor intent reaches the site.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant flex flex-col gap-sm">
+<span class="material-symbols-outlined text-primary text-[40px]">task_alt</span>
+<h3 class="font-bold text-on-surface">Fulfillment Proof</h3>
+<p class="text-on-surface-variant text-sm">Donors and vendors upload visual confirmation upon delivery and installation.</p>
+</div>
+<div class="bg-surface-container-lowest p-lg rounded-xl border border-outline-variant flex flex-col gap-sm">
+<span class="material-symbols-outlined text-primary text-[40px]">visibility</span>
+<h3 class="font-bold text-on-surface">Later Validation</h3>
+<p class="text-on-surface-variant text-sm">The local community confirms the presence and utility of the donated item.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Preview -->
+<section class="py-xl max-w-container-max mx-auto px-gutter overflow-hidden">
+<h2 class="font-headline-md text-headline-md mb-xl text-center">How Masajid Work Works</h2>
+<div class="relative">
+<div class="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-outline-variant -z-10"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-md">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold mb-sm">1</div>
+<p class="font-bold text-sm">Request submission</p>
+<p class="text-xs text-on-surface-variant mt-xs">Masjid lists needed item</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold mb-sm">2</div>
+<p class="font-bold text-sm">Admin review</p>
+<p class="text-xs text-on-surface-variant mt-xs">Need verification check</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold mb-sm">3</div>
+<p class="font-bold text-sm">Donor browse</p>
+<p class="text-xs text-on-surface-variant mt-xs">Explore local needs</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold mb-sm">4</div>
+<p class="font-bold text-sm">Donor acceptance</p>
+<p class="text-xs text-on-surface-variant mt-xs">Commitment to fulfill</p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold mb-sm">5</div>
+<p class="font-bold text-sm">Fulfillment &amp; Proof</p>
+<p class="text-xs text-on-surface-variant mt-xs">Item delivery &amp; photo</p>
+</div>
+<!-- Step 6 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold mb-sm">6</div>
+<p class="font-bold text-sm">Facility confirmation</p>
+<p class="text-xs text-on-surface-variant mt-xs">Representative receipt</p>
+</div>
+<!-- Step 7 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center font-bold mb-sm">7</div>
+<p class="font-bold text-sm">Community validation</p>
+<p class="text-xs text-on-surface-variant mt-xs">Final trust seal</p>
+</div>
+</div>
+</div>
+</section>
+<!-- User Types Section -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<h2 class="font-headline-md text-headline-md text-center mb-xl">Who can use Masajid Work?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg">
+<div class="bg-surface-container-lowest p-xl rounded-2xl flex flex-col items-center text-center border border-outline-variant shadow-sm h-full">
+<span class="material-symbols-outlined text-primary text-[48px] mb-md">mosque</span>
+<h3 class="font-bold text-headline-md mb-sm">Facility Representative</h3>
+<p class="text-on-surface-variant mb-xl">Register your masjid to post verified physical needs and infrastructure requirements.</p>
+<button class="mt-auto bg-primary text-on-primary w-full py-md rounded-xl font-bold">Register Facility</button>
+</div>
+<div class="bg-surface-container-lowest p-xl rounded-2xl flex flex-col items-center text-center border border-outline-variant shadow-sm h-full">
+<span class="material-symbols-outlined text-primary text-[48px] mb-md">volunteer_activism</span>
+<h3 class="font-bold text-headline-md mb-sm">Donor</h3>
+<p class="text-on-surface-variant mb-xl">Find and fulfill specific physical needs directly for communities in your area.</p>
+<button class="mt-auto bg-primary text-on-primary w-full py-md rounded-xl font-bold">Register as Donor</button>
+</div>
+<div class="bg-surface-container-lowest p-xl rounded-2xl flex flex-col items-center text-center border border-outline-variant shadow-sm h-full">
+<span class="material-symbols-outlined text-primary text-[48px] mb-md">storefront</span>
+<h3 class="font-bold text-headline-md mb-sm">Vendor</h3>
+<p class="text-on-surface-variant mb-xl">Partner with donors to supply and install specialized equipment for masajid.</p>
+<button class="mt-auto bg-primary text-on-primary w-full py-md rounded-xl font-bold">Join as Vendor</button>
+</div>
+<div class="bg-surface-container-lowest p-xl rounded-2xl flex flex-col items-center text-center border border-outline-variant shadow-sm h-full">
+<span class="material-symbols-outlined text-primary text-[48px] mb-md">handshake</span>
+<h3 class="font-bold text-headline-md mb-sm">Charity Rep</h3>
+<p class="text-on-surface-variant mb-xl">Monitor and coordinate large-scale physical donation campaigns across multiple facilities.</p>
+<button class="mt-auto bg-primary text-on-primary w-full py-md rounded-xl font-bold">Join Hub</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Donation Examples: Grid -->
+<section class="py-xl max-w-container-max mx-auto px-gutter">
+<h2 class="font-headline-md text-headline-md text-center mb-xl">Items You Can Donate</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-lg">
+<div class="group cursor-pointer">
+<div class="bg-surface-container overflow-hidden rounded-2xl mb-sm aspect-[4/3]">
+<img alt="Premium Prayer Carpets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close-up of high-quality emerald green Islamic prayer carpets with intricate gold patterns. The lighting is soft and natural, emphasizing the texture and luxury of the fabric. The aesthetic is clean and dignified, focusing on the physical item as a non-cash donation example." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWwVP6zrYfpGVdXlHyPTlPjK6wQCCPgPbE6giDT3KXPrG59OAaP3jjHpDUzRvBqd3uKG-4F6e0b7wZ7A8K4m4w21uZ7sakCfjMBGue7O7XOyeNUXO4iFSxu6nD5XeNrlPzIwhfUnK8ff_E4XWJXhwMqrsUR4_BA8vd9V07pUvbqWBTlQ2Rbm66By6hO5gTN5BAyReadBcfIgxWhSV_B6FidGBEa5aNsFTp0JGWGj2DtWFtV-C5WR1lM6Bk20aTkO8wQYx6a7QImP2L"/>
+</div>
+<p class="font-bold text-center">Carpets</p>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container overflow-hidden rounded-2xl mb-sm aspect-[4/3]">
+<img alt="Ceiling Fans" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern ceiling fans installed in a high-ceilinged prayer hall with warm wood accents. The image conveys cooling and comfort for the congregation. Professional architectural photography style with clean lines and soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-GDuc3hQMJQXmhegVtrbd0oNv6KqtMRBb6W6mtwf2NqzEPs973GPGmyABCstWNbkfEFjO3lLrEzwuQE44jhpJUMt92W1ifgbp21OdVX5InJzWYhvMyUb9SY54KTswyntBfit2C1Pr56UZyuwe2pdUMYAXqy_jTvRS7PWzN4-mCN1MOxPoAaaVi7unO1tsGEOL1z8EJ4n-VhSC9RiCn47VSl_yWoicwIPuu2rlwH2SgbeL9TvfnUoTcyVCbqq55DoM27vED-Izi6GR"/>
+</div>
+<p class="font-bold text-center">Fans &amp; AC</p>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container overflow-hidden rounded-2xl mb-sm aspect-[4/3]">
+<img alt="Sound Systems" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High-fidelity audio speakers and microphones arranged professionally for a mosque acoustics upgrade. The scene is clean and technological, showing professional installation quality in a modern sacred space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5BNFM2yHCAK9YSM5AJk_KiqHzeQdOIx8c3rRm1m55Uv6DAXR1WR4210G8eYrGTwxlEUUqgDHlogTr_cVH7d7lsPKfzZvZhBuEq2Z6HuOe-SSlRFn4XEjftmoTLthLSSEKJE0NOCV84tRcclyqPuObs5Gu_vyQj42FNyEEyerUcTQ2eeH2Py8RU5YGYyWz5NrDitG3IyQ9I3-PWx4wZEshiIORqIHxZV9FEyG9Vd-PUXvxt1sGhMs2d_Y8WPIHjFfUMlvUAufmaRJq"/>
+</div>
+<p class="font-bold text-center">Sound Systems</p>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container overflow-hidden rounded-2xl mb-sm aspect-[4/3]">
+<img alt="Wooden Furniture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Handcrafted wooden bookshelves and Quran stands in a minimalist masjid library. The lighting is warm and intellectual, highlighting the quality of the furniture and the peaceful atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi-6CUjzSOzktEZN4nNTXH9E69N2o21AeeohDpDbjaTqEkoukzxCpKXikYDn-VV3spSohlnm2vI95nunaG91n6pFv-mPxH0dTUwg-yfOwaKTR-k9rr9S1FBe1fceJEjH6fbKLIMOISxpz3s5c4S67CObxiBQ7NkpOCiq4sNl6nQw20bQAszbqx01nzz9lrbqWWfo5ypSKypeDWgtGfJ2xKVEOfLsfJm1Za9uIEtbmxjc_-vDuUHSvNx2roXUI6jREepdSkBBIlaLbT"/>
+</div>
+<p class="font-bold text-center">Furniture</p>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container overflow-hidden rounded-2xl mb-sm aspect-[4/3]">
+<img alt="Cleaning Supplies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A collection of professional cleaning equipment and organic supplies organized neatly. The scene represents the maintenance and Khidmah (service) aspect of masjid care, using a bright, clean lighting setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsariZTk36VtD3P00EHJmK8ngGuUBEde6lIixmovBphWZw67hMp7ZD_wr5tEJw5elvCWef9RBWI9afFuI6Nh3FKEB_Bwp6ozcYyPvoEIv66MWR0YNEkgF-M_KwAHkhSOZUszz9UyVw5EHX9wDGOzbmus-u3sdtzfhI5lDwFVPutnNEmgNmiRZc9p7r8XZ-9BLF1JefqWQttGKFNjd0qd65E0vbtdQ2xs-BDmrbhN6WuiJzYffjPvthawba2Gpp95_qZ5JP_UvC2O6c"/>
+</div>
+<p class="font-bold text-center">Cleaning Supplies</p>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container overflow-hidden rounded-2xl mb-sm aspect-[4/3]">
+<img alt="Maintenance Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A focused close-up of professional maintenance tools and electrical components being installed in a clean, modern building interior. The mood is one of expert craftsmanship and institutional reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABXjkt0i14IOb2wOohsHuMGNO1_3QmSzBPwIYsjAxGiVUe2C3W75plpDd6dt5-w8OD6fkkvPtSKE_4adsrDjbSVpX1xRpuAg3PKXnpvHaMj1GUCyMME6nueDo74RDQR497B5COZMVfa8_oAhBlPl7aQ6OGUcdr50OeS2qufR_YjVz2KGh2oEDUa62vsSma7AcIE7HtoUranafU73Q2Dgm7uRYZJj71-L7_kIoFxy2GejFYP-mG8w4ZKdWi5Vx0D3s5YMYZ5tE9jTjo"/>
+</div>
+<p class="font-bold text-center">Maintenance</p>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container overflow-hidden rounded-2xl mb-sm aspect-[4/3]">
+<img alt="Fresh Painting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Interior wall being painted in a soft off-white color within a mosque. The scene shows renovation in progress with clean drop cloths and professional painting tools, emphasizing physical facility improvement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPwLdcSNggR-P-MqjVv39qdHnwE9YyUeskDQY6GZJZFfXlNqNZ7kBvAZVzIE1K1uj0oYj6616UPPdQby0R2mKSgX6bGyi3lFJ8vHY2A1X5AHbF_P2tyX-S-TEBoTYsClnybkE8fOhBX97U1sM6x5tywJWsPYkCFeyVOI7YKsA1twxdx-XNMeGMgGq_E-GnV_VH9yQaU5sL7_7Krvd0Y_ezV2JtujtsRalvLRmy0A8xtxhMWcLBVQSB46WAFEbQoQFsHcO86N4pgR2K"/>
+</div>
+<p class="font-bold text-center">Painting</p>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container overflow-hidden rounded-2xl mb-sm aspect-[4/3]">
+<img alt="Modern Lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Elegant pendant lighting fixtures being installed in a prayer hall. The lights cast a warm, inviting glow against a minimalist architectural backdrop, signifying the transition from darkness to light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfOP4jnWLChVMSunTULFqpU7w3knJv2IWcfffm8FZ6F4mQbFuD43A8IPyKhKkwczwav_BfJEmrgazjO8uKsccv4G9fkZWwKRIv5SKlQJepqc-SkEU8QrujuLt1haiBmZC7RdE0TVlui9QAuzEeShyPXeLqOKJEGkbmgeskXStQuRP9kEfzw3h8QF-5DUWMoHMsTdUiiFvchsiaPJWLVjpL8T1bkT9f5-bo7RXUuy0_XnsIZ0EkRx4MpVkCmw-_wEKWJ9xgQUs5fQW1"/>
+</div>
+<p class="font-bold text-center">Lighting</p>
+</div>
+</div>
+</section>
+<!-- Trust & Validation: Visual Timeline -->
+<section class="py-xl bg-surface-container-highest">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-headline-md text-headline-md mb-xl">Designed to reduce fraud and increase confidence</h2>
+<div class="relative max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-xl">
+<!-- Timeline Path (Desktop Only) -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-outline-variant -translate-y-1/2"></div>
+<div class="relative bg-surface p-lg rounded-full border-4 border-primary z-10 w-48 h-48 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]">shield</span>
+<p class="font-bold text-xs mt-xs">Vetted Identity</p>
+</div>
+<div class="relative bg-surface p-lg rounded-full border-4 border-primary z-10 w-48 h-48 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]">add_photo_alternate</span>
+<p class="font-bold text-xs mt-xs">Visual Proof</p>
+</div>
+<div class="relative bg-surface p-lg rounded-full border-4 border-tertiary-container z-10 w-48 h-48 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[32px]">verified_user</span>
+<p class="font-bold text-xs mt-xs">Local Validation</p>
+</div>
+</div>
+<p class="mt-xl text-on-surface-variant max-w-2xl mx-auto">
+                Our verification loop ensures that every donation is not only delivered but also properly utilized by the community it was intended for.
+            </p>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-xl max-w-container-max mx-auto px-gutter">
+<div class="bg-primary text-on-primary rounded-3xl p-xl md:p-[80px] text-center shadow-2xl relative overflow-hidden">
+<!-- Decorative circle -->
+<div class="absolute -top-24 -left-24 w-64 h-64 bg-on-primary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -right-24 w-64 h-64 bg-tertiary-container/20 rounded-full blur-3xl"></div>
+<h2 class="font-display-lg text-display-lg mb-md">Start supporting verified physical needs today</h2>
+<p class="font-body-readable text-body-readable mb-xl max-w-xl mx-auto opacity-90">Join a network built on transparency, Amanah, and communal Khidmah.</p>
+<div class="flex flex-col sm:flex-row gap-md justify-center">
+<button class="bg-on-primary text-primary px-xl py-md rounded-xl font-bold active:scale-95 shadow-lg">Donor Registration</button>
+<button class="bg-transparent border-2 border-on-primary text-on-primary px-xl py-md rounded-xl font-bold active:scale-95">Facility Registration</button>
+<button class="text-on-primary/80 font-bold px-xl py-md active:scale-95">Login</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest w-full py-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg max-w-container-max mx-auto px-gutter">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim mb-md">
+                    Masajid Work
+                </div>
+<p class="text-on-surface-variant font-body-readable text-body-readable mb-md">
+                    Building trust and efficiency in community-driven facility management through verified physical donations.
+                </p>
+</div>
+<div>
+<h4 class="font-bold mb-md">Quick Links</h4>
+<div class="grid grid-cols-1 gap-sm">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">How it Works</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">Trust &amp; Validation</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">Facility Registration</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-md">Contact &amp; Legal</h4>
+<div class="grid grid-cols-1 gap-sm">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">Vendor Portal</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<p class="text-on-surface-variant mt-md">support@masajidwork.org</p>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter mt-xl pt-lg border-t border-outline-variant text-center">
+<p class="text-on-surface-variant font-body-readable text-body-readable">
+                © 2024 Masajid Work. Built on principles of Amanah and Khidmah.
+            </p>
+</div>
+</footer>
+</body></html>
