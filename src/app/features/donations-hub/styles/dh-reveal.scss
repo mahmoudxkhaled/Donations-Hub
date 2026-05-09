@@ -1,0 +1,30 @@
+/* Donations Hub landing — scroll reveal (DhScrollRevealDirective). Global so host is styled outside component encapsulation. */
+
+.dh-reveal {
+  opacity: 0;
+  transition:
+    opacity 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--dh-reveal-delay, 0ms);
+}
+
+.dh-reveal--up {
+  transform: translateY(32px);
+}
+
+.dh-reveal--down {
+  transform: translateY(-28px);
+}
+
+.dh-reveal.dh-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dh-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

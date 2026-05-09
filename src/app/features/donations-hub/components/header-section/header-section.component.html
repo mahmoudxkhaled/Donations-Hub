@@ -1,0 +1,68 @@
+<nav class="header" [attr.aria-label]="'donationsHub.header.navAria' | translate">
+  <div class="header__inner">
+    <a class="header__logo" href="#hero">{{ 'donationsHub.header.brand' | translate }}</a>
+    <div class="header__nav">
+      <a class="header__link header__link--active" href="#hero">{{ 'donationsHub.header.home' | translate }}</a>
+      <a class="header__link" href="#how-it-works">{{ 'donationsHub.header.howItWorks' | translate }}</a>
+      <a class="header__link" href="#about">{{ 'donationsHub.header.about' | translate }}</a>
+      <a class="header__link" href="#trust-validation">{{ 'donationsHub.header.trust' | translate }}</a>
+    </div>
+    <div class="header__actions">
+      <button
+        type="button"
+        class="header__theme"
+        (click)="toggleTheme()"
+        [attr.aria-pressed]="isDarkTheme"
+        [attr.aria-label]="(isDarkTheme ? 'donationsHub.header.themeToLight' : 'donationsHub.header.themeToDark') | translate"
+      >
+        <span class="material-symbols-outlined" aria-hidden="true">{{
+          isDarkTheme ? 'light_mode' : 'dark_mode'
+        }}</span>
+      </button>
+      <div #langMenu class="header__lang-menu" [class.header__lang-menu--open]="langMenuOpen">
+        <button
+          type="button"
+          class="header__lang-trigger"
+          [attr.aria-label]="'donationsHub.header.languageMenu' | translate"
+          [attr.aria-expanded]="langMenuOpen"
+          aria-haspopup="menu"
+          (click)="toggleLangMenu($event)"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">language</span>
+          <span class="material-symbols-outlined header__lang-chevron" aria-hidden="true">expand_more</span>
+        </button>
+        <div class="header__dropdown" role="menu">
+          <button
+            type="button"
+            role="menuitem"
+            class="header__dropdown-item"
+            [class.header__dropdown-item--active]="currentLang === 'en'"
+            (click)="setLang('en')"
+          >
+            {{ 'donationsHub.header.langEn' | translate }}
+          </button>
+          <button
+            type="button"
+            role="menuitem"
+            class="header__dropdown-item"
+            [class.header__dropdown-item--active]="currentLang === 'ar'"
+            (click)="setLang('ar')"
+          >
+            {{ 'donationsHub.header.langAr' | translate }}
+          </button>
+        </div>
+      </div>
+      <div class="header__menu">
+        <button type="button" class="header__register">
+          {{ 'donationsHub.header.register' | translate }}
+          <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+        </button>
+        <div class="header__dropdown" role="menu">
+          <a href="#cta" role="menuitem">{{ 'donationsHub.header.donorRegistration' | translate }}</a>
+          <a href="#about" role="menuitem">{{ 'donationsHub.header.facilityRegistration' | translate }}</a>
+          <a href="#about" role="menuitem">{{ 'donationsHub.header.vendorPortal' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

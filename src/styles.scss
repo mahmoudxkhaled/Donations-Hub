@@ -1,4 +1,4 @@
-@use './app/features/masajid-work/styles/mw-reveal';
+@use './app/features/donations-hub/styles/dh-reveal';
 
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -19,7 +19,7 @@ body {
   color: #1d1b20;
 }
 
-html.mw-theme-dark body {
+html.dh-theme-dark body {
   background-color: #131118;
   color: #e6e1e9;
 }

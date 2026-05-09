@@ -1,0 +1,24 @@
+<footer id="footer" class="footer" [dhScrollReveal]="'down'">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <div class="footer__logo">{{ 'donationsHub.footer.brand' | translate }}</div>
+      <p class="footer__mission">{{ 'donationsHub.footer.mission' | translate }}</p>
+    </div>
+    <div>
+      <h3 class="footer__heading">{{ 'donationsHub.footer.quickHeading' | translate }}</h3>
+      <nav class="footer__nav" [attr.aria-label]="'donationsHub.footer.quickNavAria' | translate">
+        <a *ngFor="let link of quickLinks" [href]="link.href">{{ link.labelKey | translate }}</a>
+      </nav>
+    </div>
+    <div>
+      <h3 class="footer__heading">{{ 'donationsHub.footer.legalHeading' | translate }}</h3>
+      <nav class="footer__nav" [attr.aria-label]="'donationsHub.footer.legalNavAria' | translate">
+        <a *ngFor="let link of legalLinks" [href]="link.href">{{ link.labelKey | translate }}</a>
+        <p class="footer__email">{{ 'donationsHub.footer.emailDisplay' | translate }}</p>
+      </nav>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <p class="footer__copy">{{ 'donationsHub.footer.copy' | translate }}</p>
+  </div>
+</footer>

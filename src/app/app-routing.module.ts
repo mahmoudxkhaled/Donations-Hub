@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'masajid-work',
+    path: 'donations-hub',
     loadChildren: () =>
-      import('./features/masajid-work/masajid-work.module').then((m) => m.MasajidWorkModule),
+      import('./features/donations-hub/donations-hub.module').then((m) => m.DonationsHubModule),
   },
-  { path: '', pathMatch: 'full', redirectTo: 'masajid-work' },
+  { path: '', pathMatch: 'full', redirectTo: 'donations-hub' },
 ];
 
 @NgModule({
