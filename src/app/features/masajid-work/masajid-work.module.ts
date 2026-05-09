@@ -14,6 +14,7 @@ import { ServicesSectionComponent } from './components/services-section/services
 import { ValidationSectionComponent } from './components/validation-section/validation-section.component';
 import { CallToActionSectionComponent } from './components/call-to-action-section/call-to-action-section.component';
 import { FooterSectionComponent } from './components/footer-section/footer-section.component';
+import { ThemePreferenceService } from './services/theme-preference.service';
 
 @NgModule({
   declarations: [
@@ -31,5 +32,6 @@ import { FooterSectionComponent } from './components/footer-section/footer-secti
     FooterSectionComponent,
   ],
   imports: [CommonModule, TranslateModule.forChild(), MasajidWorkRoutingModule],
+  providers: [ThemePreferenceService],
 })
 export class MasajidWorkModule {}

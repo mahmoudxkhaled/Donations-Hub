@@ -17,9 +17,47 @@
   --mw-container-max: 1280px;
   --mw-gutter: 24px;
   --mw-section-y: clamp(3rem, 6vw, 5rem);
+  --mw-features-section-bg: rgb(236 230 238 / 0.3);
+  --mw-hero-glow: rgb(103 80 164 / 0.2);
+  --mw-hero-badge-border: rgb(79 55 138 / 0.1);
+  --mw-cta-panel-bg: #4f378a;
+  --mw-cta-panel-fg: #ffffff;
+  --mw-cta-solid-bg: #ffffff;
+  --mw-cta-solid-fg: #4f378a;
+  --mw-cta-shadow: rgb(79 55 138 / 0.35);
+  --mw-header-shadow: rgb(0 0 0 / 0.08);
+  --mw-dropdown-shadow: rgb(0 0 0 / 0.12);
 
   min-height: 100vh;
   background-color: var(--mw-surface);
   color: var(--mw-on-surface);
   font-family: 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+.mw--dark {
+  --mw-primary: #cfbcff;
+  --mw-on-primary: #381e72;
+  --mw-primary-container: #5c4696;
+  --mw-on-surface: #e6e1e9;
+  --mw-on-surface-variant: #cac4d0;
+  --mw-surface: #131118;
+  --mw-surface-container: #2d2835;
+  --mw-surface-container-low: #1e1a24;
+  --mw-surface-container-lowest: #1a1620;
+  --mw-surface-container-high: #363040;
+  --mw-surface-container-highest: #403a48;
+  --mw-outline-variant: #49454f;
+  --mw-tertiary: #e9c66c;
+  --mw-tertiary-container: #c9a74d;
+  --mw-on-tertiary-container: #2a1f00;
+  --mw-features-section-bg: rgb(255 255 255 / 0.04);
+  --mw-hero-glow: rgb(208 188 255 / 0.14);
+  --mw-hero-badge-border: rgb(208 188 255 / 0.22);
+  --mw-cta-panel-bg: #4f378a;
+  --mw-cta-panel-fg: #ffffff;
+  --mw-cta-solid-bg: #eaddff;
+  --mw-cta-solid-fg: #381e72;
+  --mw-cta-shadow: rgb(0 0 0 / 0.45);
+  --mw-header-shadow: rgb(0 0 0 / 0.35);
+  --mw-dropdown-shadow: rgb(0 0 0 / 0.45);
 }

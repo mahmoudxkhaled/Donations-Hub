@@ -1,6 +1,6 @@
 .features {
   padding-block: var(--mw-section-y, 4rem);
-  background: rgb(236 230 238 / 0.3);
+  background: var(--mw-features-section-bg, rgb(236 230 238 / 0.3));
 }
 
 .features__inner {

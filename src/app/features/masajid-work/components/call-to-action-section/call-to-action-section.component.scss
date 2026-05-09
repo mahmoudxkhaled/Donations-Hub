@@ -15,9 +15,9 @@
   border-radius: 24px;
   padding: clamp(2rem, 6vw, 5rem);
   text-align: center;
-  background: var(--mw-primary, #4f378a);
-  color: var(--mw-on-primary, #fff);
-  box-shadow: 0 24px 48px rgb(79 55 138 / 0.35);
+  background: var(--mw-cta-panel-bg, #4f378a);
+  color: var(--mw-cta-panel-fg, #fff);
+  box-shadow: 0 24px 48px var(--mw-cta-shadow, rgb(79 55 138 / 0.35));
 }
 
 .cta__glow {
@@ -89,15 +89,15 @@
 
 .cta__btn--solid {
   border: none;
-  background: var(--mw-on-primary, #fff);
-  color: var(--mw-primary, #4f378a);
+  background: var(--mw-cta-solid-bg, #fff);
+  color: var(--mw-cta-solid-fg, #4f378a);
   box-shadow: 0 8px 24px rgb(0 0 0 / 0.15);
 }
 
 .cta__btn--ghost {
-  border: 2px solid var(--mw-on-primary, #fff);
+  border: 2px solid var(--mw-cta-panel-fg, #fff);
   background: transparent;
-  color: var(--mw-on-primary, #fff);
+  color: var(--mw-cta-panel-fg, #fff);
 }
 
 .cta__btn--link {
@@ -108,5 +108,5 @@
 }
 
 .cta__btn--link:hover {
-  color: var(--mw-on-primary, #fff);
+  color: var(--mw-cta-panel-fg, #fff);
 }

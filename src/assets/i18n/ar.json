@@ -13,7 +13,9 @@
       "register": "تسجيل",
       "donorRegistration": "تسجيل متبرع",
       "facilityRegistration": "تسجيل منشأة",
-      "vendorPortal": "بوابة الموردين"
+      "vendorPortal": "بوابة الموردين",
+      "themeToLight": "التبديل إلى السمة الفاتحة",
+      "themeToDark": "التبديل إلى السمة الداكنة"
     },
     "hero": {
       "titlePrefix": "ربط المساجد بالمتبرعين من أجل",

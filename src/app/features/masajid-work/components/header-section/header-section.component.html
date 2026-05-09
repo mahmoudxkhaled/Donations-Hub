@@ -8,6 +8,17 @@
       <a class="header__link" href="#">{{ 'masajidWork.header.trust' | translate }}</a>
     </div>
     <div class="header__actions">
+      <button
+        type="button"
+        class="header__theme"
+        (click)="toggleTheme()"
+        [attr.aria-pressed]="isDarkTheme"
+        [attr.aria-label]="(isDarkTheme ? 'masajidWork.header.themeToLight' : 'masajidWork.header.themeToDark') | translate"
+      >
+        <span class="material-symbols-outlined" aria-hidden="true">{{
+          isDarkTheme ? 'light_mode' : 'dark_mode'
+        }}</span>
+      </button>
       <div
         class="header__lang"
         role="group"

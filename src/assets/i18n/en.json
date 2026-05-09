@@ -13,7 +13,9 @@
       "register": "Register",
       "donorRegistration": "Donor Registration",
       "facilityRegistration": "Facility Registration",
-      "vendorPortal": "Vendor Portal"
+      "vendorPortal": "Vendor Portal",
+      "themeToLight": "Switch to light theme",
+      "themeToDark": "Switch to dark theme"
     },
     "hero": {
       "titlePrefix": "Connecting Mosques with Donors for",
