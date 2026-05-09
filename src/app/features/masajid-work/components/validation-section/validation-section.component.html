@@ -1,14 +1,26 @@
-<section id="trust-validation" class="validation" aria-labelledby="validation-heading">
+<section
+  #sectionRoot
+  id="trust-validation"
+  class="validation"
+  [class.validation--revealed]="revealed"
+  aria-labelledby="validation-heading"
+>
   <div class="validation__inner">
-    <h2 id="validation-heading" class="validation__title">
+    <h2
+      id="validation-heading"
+      class="validation__title"
+      [class.validation__title--in]="revealed"
+    >
       {{ 'masajidWork.validation.heading' | translate }}
     </h2>
     <div class="validation__row">
       <div class="validation__track" aria-hidden="true"></div>
       <div
+        *ngFor="let node of nodes; let i = index"
         class="validation__node"
-        *ngFor="let node of nodes"
         [class.validation__node--accent]="node.variant === 'accent'"
+        [class.validation__node--in]="revealed"
+        [style.animation-delay.ms]="nodeStaggerMs(i)"
       >
         <span
           class="material-symbols-outlined validation__icon"
@@ -18,6 +30,12 @@
         <p class="validation__label">{{ node.labelKey | translate }}</p>
       </div>
     </div>
-    <p class="validation__copy">{{ 'masajidWork.validation.copy' | translate }}</p>
+    <p
+      class="validation__copy"
+      [class.validation__copy--in]="revealed"
+      [style.animation-delay.ms]="copyDelayMs()"
+    >
+      {{ 'masajidWork.validation.copy' | translate }}
+    </p>
   </div>
 </section>

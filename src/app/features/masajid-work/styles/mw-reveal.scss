@@ -1,0 +1,30 @@
+/* Masajid Work — scroll reveal (used with MwScrollRevealDirective). Global so host is styled outside component encapsulation. */
+
+.mw-reveal {
+  opacity: 0;
+  transition:
+    opacity 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--mw-reveal-delay, 0ms);
+}
+
+.mw-reveal--up {
+  transform: translateY(32px);
+}
+
+.mw-reveal--down {
+  transform: translateY(-28px);
+}
+
+.mw-reveal.mw-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mw-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

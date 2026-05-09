@@ -15,9 +15,11 @@ import { ValidationSectionComponent } from './components/validation-section/vali
 import { CallToActionSectionComponent } from './components/call-to-action-section/call-to-action-section.component';
 import { FooterSectionComponent } from './components/footer-section/footer-section.component';
 import { ThemePreferenceService } from './services/theme-preference.service';
+import { MwScrollRevealDirective } from './directives/mw-scroll-reveal.directive';
 
 @NgModule({
   declarations: [
+    MwScrollRevealDirective,
     MasajidWorkLandingComponent,
     HeaderSectionComponent,
     HeroSectionComponent,
