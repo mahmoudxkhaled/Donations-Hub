@@ -1,10 +1,27 @@
-<section id="how-it-works" class="process" aria-labelledby="process-heading">
+<section
+  #sectionRoot
+  id="how-it-works"
+  class="process"
+  [class.process--revealed]="revealed"
+  aria-labelledby="process-heading"
+>
   <div class="process__inner">
-    <h2 id="process-heading" class="process__title">{{ 'masajidWork.process.heading' | translate }}</h2>
+    <h2
+      id="process-heading"
+      class="process__title"
+      [class.process__title--in]="revealed"
+    >
+      {{ 'masajidWork.process.heading' | translate }}
+    </h2>
     <div class="process__wrap">
       <div class="process__line" aria-hidden="true"></div>
       <ol class="process__grid">
-        <li class="process__step" *ngFor="let step of steps">
+        <li
+          *ngFor="let step of steps; let i = index"
+          class="process__step"
+          [class.process__step--in]="revealed"
+          [style.animation-delay.ms]="staggerMs(i)"
+        >
           <div class="process__num" [class.process__num--accent]="step.highlight">
             {{ step.number }}
           </div>
