@@ -16,6 +16,9 @@ export const DONATIONS_HUB_ROUTE_PATH = '/donations-hub';
 
 const img = (file: string) => `assets/images/donations-hub/${file}`;
 
+/** Full horizontal logo (PNG). Header/footer constrain height; width follows aspect ratio. */
+export const LOGO_SRC = img('Logo.png');
+
 export const TRUST_BAR_ITEMS: TrustBarItem[] = [
   { icon: 'no_accounts', labelKey: 'donationsHub.trustBar.noCash' },
   { icon: 'id_card', labelKey: 'donationsHub.trustBar.verifiedReps' },

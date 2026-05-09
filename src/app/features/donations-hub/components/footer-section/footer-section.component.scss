@@ -24,10 +24,23 @@
 }
 
 .footer__logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--dh-primary, #4f378a);
   margin-block-end: 16px;
+  line-height: 0;
+}
+
+.footer__logo-img {
+  display: block;
+  height: 48px;
+  width: auto;
+  max-width: min(100%, 280px);
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .footer__logo-img {
+    height: 83px;
+    max-width: min(100%, 320px);
+  }
 }
 
 .footer__mission {

@@ -1,7 +1,16 @@
 <footer id="footer" class="footer" [dhScrollReveal]="'down'">
   <div class="footer__grid">
     <div class="footer__brand">
-      <div class="footer__logo">{{ 'donationsHub.footer.brand' | translate }}</div>
+      <div class="footer__logo">
+        <img
+          class="footer__logo-img"
+          [src]="logoSrc"
+          width="240"
+          height="68"
+          [attr.alt]="'donationsHub.footer.brand' | translate"
+          decoding="async"
+        />
+      </div>
       <p class="footer__mission">{{ 'donationsHub.footer.mission' | translate }}</p>
     </div>
     <div>

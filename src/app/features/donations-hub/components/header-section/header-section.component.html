@@ -1,6 +1,19 @@
 <nav class="header" [attr.aria-label]="'donationsHub.header.navAria' | translate">
   <div class="header__inner">
-    <a class="header__logo" href="#hero">{{ 'donationsHub.header.brand' | translate }}</a>
+    <a
+      class="header__logo"
+      href="#hero"
+      [attr.aria-label]="'donationsHub.header.brand' | translate"
+    >
+      <img
+        class="header__logo-img"
+        [src]="logoSrc"
+        width="200"
+        height="56"
+        alt=""
+        decoding="async"
+      />
+    </a>
     <div class="header__nav">
       <a class="header__link header__link--active" href="#hero">{{ 'donationsHub.header.home' | translate }}</a>
       <a class="header__link" href="#how-it-works">{{ 'donationsHub.header.howItWorks' | translate }}</a>

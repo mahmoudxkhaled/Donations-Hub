@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { FOOTER_LEGAL_LINKS, FOOTER_QUICK_LINKS } from '../../data/donations-hub.data';
+import {
+  FOOTER_LEGAL_LINKS,
+  FOOTER_QUICK_LINKS,
+  LOGO_SRC,
+} from '../../data/donations-hub.data';
 
 @Component({
   standalone: false,
@@ -8,6 +12,7 @@ import { FOOTER_LEGAL_LINKS, FOOTER_QUICK_LINKS } from '../../data/donations-hub
   styleUrl: './footer-section.component.scss',
 })
 export class FooterSectionComponent {
+  readonly logoSrc = LOGO_SRC;
   readonly quickLinks = FOOTER_QUICK_LINKS;
   readonly legalLinks = FOOTER_LEGAL_LINKS;
 }

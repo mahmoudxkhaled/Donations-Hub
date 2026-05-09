@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
-import { DH_LANG_STORAGE_KEY } from '../../data/donations-hub.data';
+import { DH_LANG_STORAGE_KEY, LOGO_SRC } from '../../data/donations-hub.data';
 import { ThemePreferenceService } from '../../services/theme-preference.service';
 
 @Component({
@@ -19,6 +19,8 @@ import { ThemePreferenceService } from '../../services/theme-preference.service'
 })
 export class HeaderSectionComponent implements OnInit, OnDestroy {
   @ViewChild('langMenu', { read: ElementRef }) langMenu?: ElementRef<HTMLElement>;
+
+  readonly logoSrc = LOGO_SRC;
 
   currentLang: 'en' | 'ar' = 'en';
   isDarkTheme = false;
