@@ -1,0 +1,136 @@
+{
+  "masajidWork": {
+    "header": {
+      "navAria": "Primary navigation",
+      "brand": "Donations Hub",
+      "home": "Home",
+      "howItWorks": "How It Works",
+      "about": "About",
+      "trust": "Trust & Validation",
+      "languageGroup": "Language",
+      "langEn": "English",
+      "langAr": "Arabic",
+      "register": "Register",
+      "donorRegistration": "Donor Registration",
+      "facilityRegistration": "Facility Registration",
+      "vendorPortal": "Vendor Portal"
+    },
+    "hero": {
+      "titlePrefix": "Connecting Mosques with Donors for",
+      "titleAccent": "Verified Physical Donations",
+      "lead": "Donations Hub helps verified facilities publish real physical needs, while donors can review, accept, fulfill, and validate donations without any cash transaction through the platform.",
+      "registerDonor": "Register as Donor",
+      "registerFacility": "Register Facility",
+      "howItWorksLink": "How It Works",
+      "imageAlt": "Serene mosque interior with prayer carpets and soft morning light",
+      "badgeAria": "Verified needs highlight",
+      "badgeTitle": "Verified Needs",
+      "badgeSub": "Carpets, Lighting, Fans"
+    },
+    "trustBar": {
+      "noCash": "No cash handled by platform",
+      "verifiedReps": "Verified facility representatives",
+      "proof": "Fulfillment proof required",
+      "community": "Community validation after completion"
+    },
+    "stats": {
+      "sectionAria": "Platform statistics",
+      "facilities": "Registered Facilities",
+      "donors": "Active Donors",
+      "requests": "Donation Requests",
+      "fulfilled": "Fulfilled Donations"
+    },
+    "features": {
+      "heading": "Built for transparent physical donations",
+      "verifiedTitle": "Verified Facilities",
+      "verifiedDesc": "Rigorous vetting process for all masjid representatives and facility locations.",
+      "physicalTitle": "Physical Donations Only",
+      "physicalDesc": "Focusing strictly on tangible assets to ensure 100% of donor intent reaches the site.",
+      "proofTitle": "Fulfillment Proof",
+      "proofDesc": "Donors and vendors upload visual confirmation upon delivery and installation.",
+      "validationTitle": "Later Validation",
+      "validationDesc": "The local community confirms the presence and utility of the donated item."
+    },
+    "process": {
+      "heading": "How Donations Hub Works",
+      "s1Title": "Request submission",
+      "s1Sub": "Masjid lists needed item",
+      "s2Title": "Admin review",
+      "s2Sub": "Need verification check",
+      "s3Title": "Donor browse",
+      "s3Sub": "Explore local needs",
+      "s4Title": "Donor acceptance",
+      "s4Sub": "Commitment to fulfill",
+      "s5Title": "Fulfillment & Proof",
+      "s5Sub": "Item delivery & photo",
+      "s6Title": "Facility confirmation",
+      "s6Sub": "Representative receipt",
+      "s7Title": "Community validation",
+      "s7Sub": "Final trust seal"
+    },
+    "roles": {
+      "heading": "Who can use Donations Hub?",
+      "facilityTitle": "Facility Representative",
+      "facilityDesc": "Register your masjid to post verified physical needs and infrastructure requirements.",
+      "facilityBtn": "Register Facility",
+      "donorTitle": "Donor",
+      "donorDesc": "Find and fulfill specific physical needs directly for communities in your area.",
+      "donorBtn": "Register as Donor",
+      "vendorTitle": "Vendor",
+      "vendorDesc": "Partner with donors to supply and install specialized equipment for masajid.",
+      "vendorBtn": "Join as Vendor",
+      "charityTitle": "Charity Rep",
+      "charityDesc": "Monitor and coordinate large-scale physical donation campaigns across multiple facilities.",
+      "charityBtn": "Join Hub"
+    },
+    "donate": {
+      "heading": "Items You Can Donate",
+      "carpetsLabel": "Carpets",
+      "carpetsAlt": "Premium prayer carpets",
+      "fansLabel": "Fans & AC",
+      "fansAlt": "Ceiling fans and air conditioning",
+      "soundLabel": "Sound Systems",
+      "soundAlt": "Mosque sound system equipment",
+      "furnitureLabel": "Furniture",
+      "furnitureAlt": "Wooden furniture for masjid",
+      "cleaningLabel": "Cleaning Supplies",
+      "cleaningAlt": "Cleaning supplies for masjid",
+      "maintenanceLabel": "Maintenance",
+      "maintenanceAlt": "Maintenance work and tools",
+      "paintingLabel": "Painting",
+      "paintingAlt": "Interior painting renovation",
+      "lightingLabel": "Lighting",
+      "lightingAlt": "Modern lighting fixtures"
+    },
+    "validation": {
+      "heading": "Designed to reduce fraud and increase confidence",
+      "identity": "Vetted Identity",
+      "visualProof": "Visual Proof",
+      "localValidation": "Local Validation",
+      "copy": "Our verification loop ensures that every donation is not only delivered but also properly utilized by the community it was intended for."
+    },
+    "cta": {
+      "title": "Start supporting verified physical needs today",
+      "lead": "Join a network built on transparency, Amanah, and communal Khidmah.",
+      "donorBtn": "Donor Registration",
+      "facilityBtn": "Facility Registration",
+      "login": "Login"
+    },
+    "footer": {
+      "brand": "Donations Hub",
+      "mission": "Building trust and efficiency in community-driven facility management through verified physical donations.",
+      "quickHeading": "Quick Links",
+      "quickNavAria": "Quick links",
+      "legalHeading": "Contact & Legal",
+      "legalNavAria": "Legal and contact",
+      "aboutUs": "About Us",
+      "howItWorks": "How it Works",
+      "trust": "Trust & Validation",
+      "facilityReg": "Facility Registration",
+      "vendorPortal": "Vendor Portal",
+      "privacy": "Privacy Policy",
+      "emailDisplay": "support@donationshub.org",
+      "copy": "© 2024 Donations Hub. Built on principles of Amanah and Khidmah."
+    }
+  }
+}
